@@ -1,0 +1,48 @@
+<div class="main-container">
+
+    <div>
+        <div class="row">
+            <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+                  <app-bus-card></app-bus-card>
+            </div>
+            <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+            </div>
+            <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+                  <app-bus-card></app-bus-card>
+            </div>
+        </div>
+    </div>
+
+    <br>
+
+    <div class="video-container">
+        <vg-player (onPlayerReady)="onPlayerReady($event)" vg-responsive="true">
+          <vg-buffering></vg-buffering>
+
+          <video #media
+                [vgMedia]="media"
+                [src]="currentItem.src"
+                id="singleVideo"
+                preload="auto"
+                crossorigin>
+          </video>
+        </vg-player>
+
+    </div>
+
+    <br>
+
+    <div>
+        <div class="row">
+            <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+                  <app-bus-card></app-bus-card>
+            </div>
+            <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+            </div>
+            <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+                  <app-bus-card></app-bus-card>
+            </div>
+        </div>
+    </div>
+
+</div>

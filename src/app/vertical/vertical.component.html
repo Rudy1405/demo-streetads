@@ -1,0 +1,51 @@
+<div class="main-container" >
+  <!--This should be an ngfor of the data  <div class="centerit">-->
+  <div>
+      <div class="row">
+          <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+                <app-bus-card></app-bus-card>
+          </div>
+          <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+                <app-bus-card></app-bus-card>
+          </div>
+      </div>
+  </div>
+
+  <br>
+
+  <div>
+    <div class="row">
+      <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+            <app-bus-card></app-bus-card>
+      </div>
+      <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+            <app-bus-card></app-bus-card>
+      </div>
+    </div>
+  </div>
+
+  <br>
+
+
+  <div class="video-container">
+    <vg-player (onPlayerReady)="onPlayerReady($event)" vg-responsive="true">
+      <vg-buffering></vg-buffering>
+
+      <video #media
+            [vgMedia]="media"
+            [src]="currentItem.src"
+            id="singleVideo"
+            preload="auto"
+            crossorigin>
+      </video>
+    </vg-player>
+  </div>
+</div>
+
+
+
+<!--
+     <button (click)="pauseAll()">
+      Pause
+    </button>
+-->
